@@ -188,9 +188,14 @@ color: white;
 
 .parag
 {
-margin-top:60px;
+margin-top:20px;
 color: royalblue;
 text-align: center;
 background-color: aquamarine;
+}
+
+.erreur
+{
+ color:red;
 }
 
