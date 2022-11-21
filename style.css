@@ -194,8 +194,17 @@ text-align: center;
 background-color: aquamarine;
 }
 
-.erreur
+#erreur
 {
- color:red;
+color:red;
+text-align: center;
+font-weight: bold;
+background-color: black;
+width:15%;
+margin:auto;
+margin-top:20px;
+border-radius:20%;
+padding: 4px;
+border: ridge white 5px;
 }
 
