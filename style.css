@@ -1,16 +1,70 @@
 
 /* La mise en forme de la page connexion */
 
+* 
+{
+box-sizing: border-box;
+}
+
+html
+{
+font-family:'Times New Roman', Times, serif;
+background-color:blanchedalmond;
+}
+
+.head
+{
+display: flex;
+flex-direction:column;
+margin-top:20px;
+}
+
+.logo
+{
+width: 400px;
+height:100px;
+border:double brown 5px;
+border-top: ridge brown 10px;
+border-bottom: ridge brown 10px;
+border-left:none;
+border-right:none;
+margin-left:50px;
+border-radius:20%;
+}
+
 .titre
 {
 color: white;
 background-color:brown;
 text-align: center;
+margin-left: 150px ;
+margin-right: 150px ;
+margin-top:50px;
+border-left: double white 10px;
+border-right: double white 10px;
+border-bottom:ridge 10px grey;
+border-top: ridge 10px grey;
+padding:10px;
+}
+
+
+.form
+{
+margin:auto;
+margin-top:50px;
+border: double grey 5px;
+width:70%;
+display: flex;
+justify-content: center;
+background-color: cadetblue;
+padding:20px;
 }
 
 .champ
 {
-border: double blanchedalmond 5px;
+border: groove crimson 5px;
+width:80%;
+margin:auto;
 }
 
 .titre1
@@ -28,25 +82,61 @@ text-align: center;
 
 .label1
 {
-margin-right: 60px;
+margin-left: 50px;
+background-color: #f4511e;
+border: none;
+color: white;
+padding: 8px 16px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+border-radius: 20%;
+border:ridge 3px black;
+}
+
+.label1:hover 
+{
+opacity:1
 }
 
 .label2
 {
-margin-right: 60px;
+margin-left: 50px;
+background-color: #f4511e;
+border: none;
+color: white;
+padding: 8px 16px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+border-radius: 20%;
+border:ridge 3px black;
 }
 
-.parag
+.label2:hover 
 {
- color: royalblue;
- text-align: center;
+opacity:1
 }
+
+
+
 
 input[type=text] 
 {
-width: 100%;
+margin:auto;
+width: 50%;
 padding: 12px 20px;
-margin: 8px 0;
+margin-left:200px;
 display: inline-block;
 border: 1px solid #ccc;
 border-radius: 4px;
@@ -55,13 +145,15 @@ box-sizing: border-box;
 
 input[type=password] 
 {
-width: 100%;
+margin:auto;
+width: 50%;
 padding: 12px 20px;
-margin: 8px 0;
+margin-left:200px;
 display: inline-block;
 border: 1px solid #ccc;
 border-radius: 4px;
 box-sizing: border-box;
+
 }
 
 input[type=submit] 
@@ -76,6 +168,7 @@ border-right: 4px yellow ridge;
 border-bottom: 6px white solid;
 border-top: 6px white solid;
 color: white;
+margin-left:70px;
 }
 
 input[type=reset] 
@@ -90,6 +183,14 @@ border-left: 4px yellow ridge;
 border-bottom: 6px white solid;
 border-top: 6px white solid;
 color: white;
-margin-left: 50px;
+
+}
+
+.parag
+{
+margin-top:60px;
+color: royalblue;
+text-align: center;
+background-color: aquamarine;
 }
 
