@@ -1,1 +1,95 @@
 
+/* La mise en forme de la page connexion */
+
+.titre
+{
+color: white;
+background-color:brown;
+text-align: center;
+}
+
+.champ
+{
+border: double blanchedalmond 5px;
+}
+
+.titre1
+{
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align: center;
+}
+
+.label1
+{
+margin-right: 60px;
+}
+
+.label2
+{
+margin-right: 60px;
+}
+
+.parag
+{
+ color: royalblue;
+ text-align: center;
+}
+
+input[type=text] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=password] 
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit] 
+{
+width: 40%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+}
+
+input[type=reset] 
+{
+width: 40%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+margin-left: 50px;
+}
+
