@@ -1,4 +1,4 @@
-/*
+
 document.getElementById("connexion").addEventListener("submit", function(e) {
 var erreur;
 var login = document.getElementById("login");
@@ -23,20 +23,17 @@ if (login.value != "admin") {
            }
 })
 
-*/
 
 
-    
+    // deuxième façon de réaliser la validation du formulaire en javascript avec la boucle for en considérant l'élement html input comme un une variable d'un tableau.
+    /*
     document.getElementById("connexion").addEventListener("submit", function(e) {
     var erreur;
     var inputs = document.getElementById("connexion").getElementsByTagName("input"); 
     console.log(inputs);
     for ( var i = 0; i < inputs.length; i++) {
        
-        if(!inputs[i].value) {
-            erreur = "Veuillez renseigner tous les champs";
-        }
-
+        
         if(!inputs["password"].value != "admin") {
             erreur = "Votre mode de passe est incorrecte !";
         }
@@ -45,19 +42,22 @@ if (login.value != "admin") {
             erreur = "Votre login est incorrecte !";
         }
 
-        if (erreur) {
-            e.preventDefault();
-            document.getElementById("erreur").innerHTML = erreur;
-            return false;
-         } else {
-             alert("Formulaire envoyé !");
-               }
-        
+        if(!inputs[i].value) {
+            erreur = "Veuillez renseigner tous les champs";
+        }
+
     }
 
-   
-  
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false;
+     } else {
+         alert("Formulaire envoyé !");
+           }
 })
+
+*/
 
 
 
