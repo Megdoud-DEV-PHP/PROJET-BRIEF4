@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice 1 avec Java-Sript</title>
+</head>
+<body>
 
+<section> 
+    <div class="grid-container">
+            <div>
+                <header>
+                    <img>
+                    <h1></h1>
+                </header>
+            </div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div class="grid-item5">
+
+                <h4 class="titre2">Enoncé</h4>
+
+                <img src="images/exercice-1.png" alt="image" class="exercice1">
+
+                <h4 class="titre2">Corrigé</h4>
+                <script>
+                /* Application du java-script pour la page Exercice-1.html */
+                        document.getElementById("execution").addEventListener("submit", function(){
+                        var vide;
+                        var information = document.getElementById("information");
+                        var information1 = document.getElementById("information1");
+                        var information2 = document.getElementById("information2");
+                    
+                        var messages = information + information1 + information2;
+                        if(information.value == "") {
+                            vide = "Votre champ1 est vide !"
+                        }
+                        if(information1.value == "") {
+                            vide = "Votre champ2 est vide !"
+                        }
+                        if(information2.value == "") {
+                            vide = "Votre champ3 est vide !"
+                        } else{
+                            alert(messages);
+                        }
+                        })
+
+
+
+
+                </script>
+                <h4 class="titre2">Exécution</h4>
+
+                <form id="execution">
+
+                    <label for="information">Le message</label><br>
+                    <input type="information" id="information" name="information"><br>
+
+                    <label for="information1">Le contenu d'un variable</label><br>
+                    <input type="information1" id="information1" name="information1"><br>
+
+                    <label for="information2">Le contenu d'un constante date</label><br>
+                    <input type="information2" id="information2" name="information2"><br>
+
+                    <input type="submit" value="Submit" id="resultat">
+                </form>
+
+            </div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+    </div>
+</section>
+
+
+
+
+
+<script src="script.js"></script> 
+</body>
+</html>
