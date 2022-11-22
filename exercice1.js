@@ -7,6 +7,7 @@ document.getElementById("execution").addEventListener("submit", function() {
     var information1 = document.getElementById("information1");
     var information2 = document.getElementById("information2");
     var messages = information.value + information1.value + information2.value;
+    alert(messages);
    
    
 
