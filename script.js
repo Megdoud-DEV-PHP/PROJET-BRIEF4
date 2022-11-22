@@ -36,22 +36,26 @@ if (login.value != "admin") {
         if(!inputs[i].value) {
             erreur = "Veuillez renseigner tous les champs";
         }
-        if(!inputs[password].value != "admin") {
+
+        if(!inputs["password"].value != "admin") {
             erreur = "Votre mode de passe est incorrecte !";
         }
-        if(!inputs[login].value != "admin") {
+
+        if(!inputs["login"].value != "admin") {
             erreur = "Votre login est incorrecte !";
         }
+
+        if (erreur) {
+            e.preventDefault();
+            document.getElementById("erreur").innerHTML = erreur;
+            return false;
+         } else {
+             alert("Formulaire envoyé !");
+               }
         
     }
 
-    if (erreur) {
-        e.preventDefault();
-        document.getElementById("erreur").innerHTML = erreur;
-        return false;
-     } else {
-         alert("Formulaire envoyé !");
-           }
+   
   
 })
 
