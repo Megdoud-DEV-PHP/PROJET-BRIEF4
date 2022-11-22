@@ -73,24 +73,17 @@ if ((!password.value) && (!login.value)) {
 */
 
 /* Application du java-script pour la page Exercice-1.html */
-document.getElementById("execution").addEventListener("submit", function(){
+
+    document.getElementById("execution").addEventListener("submit", function() {
     var vide;
     var information = document.getElementById("information");
     var information1 = document.getElementById("information1");
     var information2 = document.getElementById("information2");
    
-    var messages = information + information1 + information2;
-    if(information.value == "") {
-        vide = "Votre champ1 est vide !"
-    }
-    if(information1.value == "") {
-        vide = "Votre champ2 est vide !"
-    }
-    if(information2.value == "") {
-        vide = "Votre champ3 est vide !"
-    } else{
-        alert(messages);
-    }
+   
+    var messages = information.value + information1.value + information2.value;
+    console.log(messages);
+    
     
 
 })

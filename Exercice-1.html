@@ -26,46 +26,21 @@
                 <img src="images/exercice-1.png" alt="image" class="exercice1">
 
                 <h4 class="titre2">Corrigé</h4>
-                <script>
-                /* Application du java-script pour la page Exercice-1.html */
-                        document.getElementById("execution").addEventListener("submit", function(){
-                        var vide;
-                        var information = document.getElementById("information");
-                        var information1 = document.getElementById("information1");
-                        var information2 = document.getElementById("information2");
-                    
-                        var messages = information + information1 + information2;
-                        if(information.value == "") {
-                            vide = "Votre champ1 est vide !"
-                        }
-                        if(information1.value == "") {
-                            vide = "Votre champ2 est vide !"
-                        }
-                        if(information2.value == "") {
-                            vide = "Votre champ3 est vide !"
-                        } else{
-                            alert(messages);
-                        }
-                        })
-
-
-
-
-                </script>
+               
                 <h4 class="titre2">Exécution</h4>
 
                 <form id="execution">
 
                     <label for="information">Le message</label><br>
-                    <input type="information" id="information" name="information"><br>
+                    <input type="information" id="information" name="information">
 
-                    <label for="information1">Le contenu d'un variable</label><br>
-                    <input type="information1" id="information1" name="information1"><br>
+                    <label for="information1">Le contenu d'un variable</label>
+                    <input type="information1" id="information1" name="information1">
 
-                    <label for="information2">Le contenu d'un constante date</label><br>
-                    <input type="information2" id="information2" name="information2"><br>
+                    <label for="information2">Le contenu d'un constante date</label>
+                    <input type="information2" id="information2" name="information2">
 
-                    <input type="submit" value="Submit" id="resultat">
+                    <input type="submit" value="Envoyer" id="resultat">
                 </form>
 
             </div>
