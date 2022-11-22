@@ -243,14 +243,27 @@ flex-direction: column;
 
 .titre2
 {
-text-align: left;
-margin-left:10px;
-color:black;
+background-color:black;
+padding:8px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align:center;
+width:200px;
+margin-left:30px;
+
+
 }
+
 .exercice1
 {
- width:500px;
- margin-left:10px;
+ width:600px;
+ margin-left:20px;
+ border:ridge brown 5px;
+ 
 }
 
 
