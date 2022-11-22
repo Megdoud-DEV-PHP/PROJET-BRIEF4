@@ -24,15 +24,25 @@ if (login.value != "admin") {
 })
 
 */
-document.getElementById("connexion").addEventListener("submit", function(e) {
+
+
+    
+    document.getElementById("connexion").addEventListener("submit", function(e) {
     var erreur;
-    var inputs = document.getElementsByTagName("input"); 
-   
-    for (var i = 0; i < inputs.length; i++) {
-        console.log(inputs[i]);
+    var inputs = document.getElementById("connexion").getElementsByTagName("input"); 
+    console.log(inputs);
+    for ( var i = 0; i < inputs.length; i++) {
+       
         if(!inputs[i].value) {
             erreur = "Veuillez renseigner tous les champs";
         }
+        if(!inputs[password].value != "admin") {
+            erreur = "Votre mode de passe est incorrecte !";
+        }
+        if(!inputs[login].value != "admin") {
+            erreur = "Votre login est incorrecte !";
+        }
+        
     }
 
     if (erreur) {
@@ -42,6 +52,9 @@ document.getElementById("connexion").addEventListener("submit", function(e) {
      } else {
          alert("Formulaire envoyé !");
            }
-
+  
 })
+
+
+
 
