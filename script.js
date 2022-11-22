@@ -14,13 +14,7 @@ if (login.value != "admin") {
     erreur = "Veuillez renseigner votre login";
 }
 
-if (erreur) {
-   e.preventDefault();
-   document.getElementById("erreur").innerHTML = erreur;
-   return false;
-} else {
-    alert("Formulaire envoyé !");
-      }
+
 })
 
 */
@@ -29,8 +23,18 @@ document.getElementById("connexion").addEventListener("submit", function(e) {
     var inputs = document.getElementsByTagName("input"); 
     console.log(inputs);
     for (var i = 0; i < inputs.length; i++) {
-        if(!inputs[i].value) 
+        if(!inputs[i].value) {
+            erreur = "Veuillez renseigner tous les champs";
+        }
     }
+
+    if (erreur) {
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false;
+     } else {
+         alert("Formulaire envoyé !");
+           }
 
 })
 
