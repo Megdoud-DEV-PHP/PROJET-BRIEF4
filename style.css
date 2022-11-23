@@ -12,48 +12,68 @@ font-family:'Times New Roman', Times, serif;
 
 .grid-container 
 {
-outline:5px crimson ridge;
-margin-top:10px;
+margin: auto;
 display: grid;
-grid-template-columns: 40% 60%;
+grid-template-columns: 30% 70%;
 grid-template-rows: auto auto auto auto;
-gap:10px;
-background-color:grey;
+background-color:rgba(128, 128, 128, 0.799);
+gap:5px;
+width:100%;
 }
   
 .grid-container > div 
 {
-background-color:paleturquoise;
-text-align: center;
-padding: 10px 10px;
-font-size: 30px;
+margin: auto;
+background-color: rgba(51, 51, 51, 0.26);
+font-size: 20px;
 }
 
 
 .grid-item1
 {
-margin:auto;
-margin-top:20px;
-width:100%;
+margin-top: 40px;
 grid-column: 1 / span 2;
+height: 30%;
 display: flex;
-justify-content:space-between;
-align-items:center;
 flex-direction:row;
+justify-content: space-around;
+align-items: center;
+border-radius:10%;
+border-left: double white 35px;
+border-right: double white 35px;
 }
 
 img.logo
 {
 width: 300px;
 height:80px;
-border:double brown 5px;
-border-top: ridge brown 10px;
-border-bottom: ridge brown 10px;
-border-left:none;
-border-right:none;
+border-bottom:ridge brown 12px;
+border-top:ridge brown 12px;
+border-radius:30%;
 margin-left:50px;
-border-radius:20%;
+position: relative;
+animation-name: FM;
+animation-delay: 2s;
+animation-duration: 6s;
+animation-timing-function: ease;
+transition: 5s;
+animation-iteration-count:1;
+animation-direction: alternate;
 }
+
+@keyframes FM
+{
+10% 
+{transform: rotateX(180deg);}
+50% 
+{
+border-top:ridge grey 1px;
+border-bottom:ridge grey 1px;
+padding:5px;
+border-left:groove 35px cyan;
+border-right:groove 35px cyan;}
+}
+
 
 .titre
 {
@@ -73,8 +93,11 @@ padding:10px;
 .grid-item2
 {
 display: flex;
-height:25%;
-width:100%;
+grid-column: 1 / span 2;
+width:25%;
+justify-content: space-around;
+border-left: white double 15px;
+border-radius:10%;
 }
 
 ul 
@@ -115,9 +138,9 @@ display: inline-block;
 display: none;
 position: absolute;
 background-color: #f9f9f9;
-min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
+width:80px;
 }
   
 .dropdown-content a 
