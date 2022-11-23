@@ -15,7 +15,7 @@ font-family:'Times New Roman', Times, serif;
 outline:5px crimson ridge;
 margin-top:10px;
 display: grid;
-grid-template-columns: 20% 80%;
+grid-template-columns: 40% 60%;
 grid-template-rows: auto auto auto auto;
 gap:10px;
 background-color:grey;
@@ -70,10 +70,6 @@ border-top: ridge 10px grey;
 padding:10px;
 }
 
-
-
-
-
 .grid-item2
 {
 display: flex;
@@ -81,30 +77,66 @@ height:25%;
 width:100%;
 }
 
-nav
+ul 
 {
 list-style-type: none;
-background-color:#f4501e68;
-margin:0;
-padding:0;
-border-radius:10%;
-width:100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
 }
   
-li a 
+li 
 {
-display: block;
-color: #000;
-padding: 8px 16px;
+float: left;
+}
+  
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
 text-decoration: none;
 }
   
-  
-li a:hover 
+li a:hover, .dropdown:hover .dropbtn 
 {
-background-color: #555;
-color: white;
+background-color: red;
 }
+  
+li.dropdown 
+{
+display: inline-block;
+}
+  
+.dropdown-content
+{
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+  
+.dropdown-content a 
+{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+  
+.dropdown-content a:hover 
+{background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content 
+{
+display: block;
+}
+
 
 .grid-item3
 {
@@ -118,21 +150,12 @@ grid-column: 1 / span 2;
 justify-content: space-around;
 }
 
-.contenu{
+.contenu
+{
 font-size:20px;
 text-align:left;
 padding:5px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* La mise en forme de la page connexion */
@@ -315,6 +338,17 @@ display: flex;
 justify-content: flex-start;
 flex-direction: column;
 }
+
+.grid-item2-1
+{
+display: flex;
+height:27%;
+width:100%;
+}
+
+
+
+
 
 .titre3
 {
