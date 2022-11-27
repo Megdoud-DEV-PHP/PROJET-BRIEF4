@@ -1,3 +1,175 @@
+
+
+/* La mise en forme de la page connexion */
+
+.form
+{
+margin:auto;
+margin-top:10px;
+border: double grey 5px;
+width:100%;
+display: flex;
+justify-content: center;
+background-color: cadetblue;
+padding:10px 10px;
+}
+
+
+.champ
+{
+border: groove crimson 5px;
+width:70%;
+margin:auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.titre1
+{
+background-color:cadetblue;
+padding: 5px 6px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align: center;
+}
+
+.label1
+{
+width:30%;
+margin-left: 50px;
+background-color: #f4511e;
+border: none;
+color: white;
+padding: 8px 16px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+border-radius: 20%;
+border:ridge 3px black;
+}
+
+.label1:hover 
+{
+opacity:1
+}
+
+.label2
+{
+width:30%;
+margin-left: 50px;
+background-color: #f4511e;
+border: none;
+color: white;
+padding: 8px 16px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+border-radius: 20%;
+border:ridge 3px black;
+}
+
+.label2:hover 
+{
+opacity:1
+}
+
+input[type=text] 
+{
+margin:auto;
+width: 60%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=password] 
+{
+margin:auto;
+width: 60%;
+padding: 12px 20px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+
+}
+
+input[type=submit] 
+{
+margin: auto;
+margin-top:10px;
+width: 50%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-left: 35px white double;
+border-right: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+margin-bottom:10px;
+}
+
+input[type=reset] 
+{
+margin:auto ;
+width:50%;
+cursor: pointer;
+background-color:tomato;
+padding: 2px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+}
+
+#erreur
+{
+color:red;
+text-align: center;
+font-weight: bold;
+background-color: black;
+width:55%;
+margin:auto;
+margin-top:20px;
+border-radius:20%;
+padding: 4px;
+border: ridge white 5px;
+}
+
+.parag
+{
+margin-top:20px;
+color: royalblue;
+text-align: center;
+background-color: aquamarine;
+border-bottom: double 5px brown;
+border-top: double 5px brown;
+padding:3px 3px;
+border-radius: 10px;
+}
+
+
 /* La mise en forme de la page index.html */
 
 * 
@@ -249,203 +421,38 @@ padding:5px;
 color:yellow;
 }
 
-
-/* La mise en forme de la page connexion */
-
+/* La mise en forme de la page Exercice-1.html */
 
 
-.form
+.grid-item3-1
 {
 margin:auto;
-margin-top:50px;
-border: double grey 5px;
-width:70%;
+margin-top:200px;
+width:60%;
+grid-column: 1 / span 2;
 display: flex;
-justify-content: center;
+justify-content:center;
+flex-direction: column;
+}
+
+.titre-ex
+{
 background-color: cadetblue;
-padding:20px;
-}
-
-
-.champ
-{
-border: groove crimson 5px;
-width:80%;
-margin:auto;
-}
-
-
-.titre1
-{
-background-color:;
-padding: 2px;
-border-radius:30%;
-border-left: 35px white double;
-border-right: 4px yellow ridge;
-border-bottom: 6px white solid;
-border-top: 6px white solid;
-color: white;
-text-align: center;
-}
-
-.label1
-{
-margin-left: 50px;
-background-color: #f4511e;
-border: none;
-color: white;
-padding: 8px 16px;
-text-align: center;
-font-size: 16px;
-margin: 4px 2px;
-opacity: 0.6;
-transition: 0.3s;
-display: inline-block;
-text-decoration: none;
-cursor: pointer;
-border-radius: 20%;
-border:ridge 3px black;
-}
-
-.label1:hover 
-{
-opacity:1
-}
-
-.label2
-{
-margin-left: 50px;
-background-color: #f4511e;
-border: none;
-color: white;
-padding: 8px 16px;
-text-align: center;
-font-size: 16px;
-margin: 4px 2px;
-opacity: 0.6;
-transition: 0.3s;
-display: inline-block;
-text-decoration: none;
-cursor: pointer;
-border-radius: 20%;
-border:ridge 3px black;
-}
-
-.label2:hover 
-{
-opacity:1
-}
-
-
-
-
-input[type=text] 
-{
-margin:auto;
-width: 50%;
-padding: 12px 20px;
-margin-left:200px;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-}
-
-input[type=password] 
-{
-margin:auto;
-width: 50%;
-padding: 12px 20px;
-margin-left:200px;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-
-}
-
-input[type=submit] 
-{
-width: 40%;
-cursor: pointer;
-background-color:tomato;
-padding: 2px;
-border-radius:30%;
-border-left: 35px white double;
-border-right: 4px yellow ridge;
-border-bottom: 6px white solid;
-border-top: 6px white solid;
-color: white;
-}
-
-input[type=reset] 
-{
-width: 40%;
-cursor: pointer;
-background-color:tomato;
-padding: 2px;
+padding:8px;
 border-radius:30%;
 border-right: 35px white double;
 border-left: 4px yellow ridge;
 border-bottom: 6px white solid;
 border-top: 6px white solid;
 color: white;
-margin-left:140px;
+text-align:center;
+width:50%;
+margin-left:30px;  
 }
-
-#erreur
-{
-color:red;
-text-align: center;
-font-weight: bold;
-background-color: black;
-width:15%;
-margin:auto;
-margin-top:20px;
-border-radius:20%;
-padding: 4px;
-border: ridge white 5px;
-}
-
-.parag
-{
-margin-top:20px;
-color: royalblue;
-text-align: center;
-background-color: aquamarine;
-}
-
-
-
-
-/* La mise en forme de la page Exercice-1.html */
-
-
-.grid-item5
-{
-margin:auto;
-width:80%;
-grid-column: 1 / span 2;
-grid-row: 3;
-display: flex;
-justify-content: flex-start;
-flex-direction: column;
-}
-
-.grid-item2-1
-{
-display: flex;
-height:27%;
-width:100%;
-}
-
-
-
-
 
 .titre3
 {
-background-color:black;
+background-color:cadetblue;
 padding:8px;
 border-radius:30%;
 border-right: 35px white double;
@@ -476,8 +483,13 @@ border:ridge brown 5px;
 .phrase
 {
 font-size:20px;
+color:white;
+padding:3px 5px;
 margin-left: 10px;
-color:blue;
+}
+.envoyer
+{
+width:20%;
 }
 
 

@@ -3,13 +3,12 @@
 /* Application du java-script pour la page connexion */
 
 document.getElementById("connexion").addEventListener("submit", function(e) {
-
 var erreur;
 var login = document.getElementById("login");
 var password = document.getElementById("password");
 
 
-//Deuxième cas on suppose que le premier champ login n'est pas correcte.
+//Troisième cas on suppose que le deuxième champ password n'est pas correcte.
 
 if (password.value != "admin") {
     erreur = "Veuillez renseigner votre mode passe";
