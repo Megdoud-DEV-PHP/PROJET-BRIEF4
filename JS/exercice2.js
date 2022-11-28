@@ -10,8 +10,11 @@
 // })
 
 function calcul() {
+    
     const TVA = 1.186;
     prixHT = parseInt(document.getElementById("information").value) ;
+   
+    
     
     prixTTC = parseInt(prixHT) * TVA;
     alert(prixTTC);
