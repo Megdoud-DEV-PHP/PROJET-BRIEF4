@@ -1,7 +1,7 @@
 const questionContainer = document.querySelector(".click-event");
 console.log(questionContainer);
 const btn1 = document.querySelector("#btn-1");
-const response = document.querySelector('h4');
+const response = document.querySelector('h6');
 
 btn1.addEventListener('click', () => {
 response.classList.add("show-response");

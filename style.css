@@ -202,7 +202,6 @@ font-family:'Times New Roman', Times, serif;
 
 .grid-container 
 {
-
 display: grid;
 grid-template-columns: 30% 70%;
 grid-template-rows: auto auto auto auto;
@@ -239,7 +238,7 @@ height:80px;
 border-bottom:ridge brown 12px;
 border-top:ridge brown 12px;
 border-radius:30%;
-margin-left:50px;
+
 position: relative;
 animation-name: FM;
 animation-delay: 2s;
@@ -407,7 +406,7 @@ box-shadow: 0 1px #666;
 transform: translateY(10px);
 }
 
-h4
+h6
 {
 visibility: hidden; 
 opacity:0;
@@ -420,7 +419,7 @@ width:300px;
 {
 visibility: visible;
 opacity: 1;
-transform: translateX(1100px);
+transform: translateX(200px);
 background-color:tomato;
 padding: 5px 5px;
 border-radius:30%;
@@ -566,6 +565,137 @@ padding:3px 5px;
 margin-left:20px;
 }
 
+
+
+/* Le responsiv design pour la page connexion.html et index.html */
+@media only screen and (max-width: 500px) 
+
+{
+.grid-container 
+{
+margin:auto;
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+width:100%;
+}
+.grid-item1
+{
+margin:auto;
+margin-top:20px;
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+width:80%;
+}
+
+.grid-item2
+{
+margin:auto;
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+width:100%;
+}
+
+.grid-item3
+{
+margin:auto;
+margin-top:320px;
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+width:100%;
+}
+.grid-item4
+{
+margin:auto;
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+width:100%;
+height:50px;
+padding:2px;
+}
+
+.contenu
+{
+font-size:12px;
+text-align:left;
+padding:2px 2px;
+}
+
+/* Le responsiv design pour la page Exercice-1.html */
+
+
+.grid-item3-1
+{
+margin:auto;
+margin-top:350px;
+width:80%;
+grid-column: 1 / span 2;
+display: flex;
+flex-direction: column;
+}
+
+.titre-ex
+{
+margin: auto;
+margin-top: 20px;
+background-color: cadetblue;
+padding:8px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align:center;
+width:80%;
+}
+
+.titre3
+{
+background-color:cadetblue;
+padding:8px;
+border-radius:30%;
+border-right: 35px white double;
+border-left: 4px yellow ridge;
+border-bottom: 6px white solid;
+border-top: 6px white solid;
+color: white;
+text-align:center;
+width:200px;
+margin-left:30px;
+}
+
+
+.exercice1
+{
+width:370px;
+border:ridge brown 5px;
+}
+
+.solution-ex1-js
+{
+width:370px;
+border:ridge brown 5px;
+}
+
+.phrase
+{
+font-size:20px;
+color:white;
+padding:3px 5px;
+margin-left:20px;
+}
+
+
+
+
+
+
+}
 
 
 
