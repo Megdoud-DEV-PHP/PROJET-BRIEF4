@@ -373,21 +373,22 @@ display: block;
 #btn-1
 {
 display: inline-block;
-padding: 10px 15px;
-font-size: 18px;
+font-size:small;
 cursor: pointer;
 text-align: center;
 text-decoration: none;
 font-weight: bold;
 outline: none;
 color: white;
-background-color:tomato;
+background-color:#666;
 border: none;
-border-radius: 15px;
+border-radius: 50%;
 box-shadow: 0px 17px #999;
 border-bottom: 1px white solid;
 margin-left:95px;
 transition: 5s;
+width:60px;
+height:50px;
 }
 
 
@@ -404,6 +405,30 @@ background-color:magenta;
 color: black;
 box-shadow: 0 1px #666;
 transform: translateY(10px);
+}
+
+h4
+{
+visibility: hidden; 
+opacity:0;
+transition: 10s;
+transform: translateX(-600px);
+width:300px;
+} 
+
+.show-response 
+{
+visibility: visible;
+opacity: 1;
+transform: translateX(1100px);
+background-color:tomato;
+padding: 5px 5px;
+border-radius:30%;
+border-left: 35px white double;
+border-bottom: 6px solid white;
+border-top: 6px solid white;
+border-right: groove 2px yellow;
+color: white;
 }
 
 
